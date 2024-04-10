@@ -6,6 +6,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 #definindo a aplicação
 app = Flask(__name__)
+app.config.from_object('config')
 #definindo um banco de dados
 db = SQLAlchemy(app)
 
